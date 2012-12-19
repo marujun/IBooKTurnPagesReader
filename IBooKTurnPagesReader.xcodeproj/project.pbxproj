@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623B39D3146A553F00418712 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 623B39D2146A553F00418712 /* test.pdf */; };
+		623B39E8146A65CB00418712 /* PdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 623B39E7146A65CB00418712 /* PdfView.m */; };
+		626A83201468C64C00915972 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A831F1468C64C00915972 /* UIKit.framework */; };
+		626A83221468C64C00915972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83211468C64C00915972 /* Foundation.framework */; };
+		626A83241468C64C00915972 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83231468C64C00915972 /* CoreGraphics.framework */; };
+		626A832A1468C64C00915972 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 626A83281468C64C00915972 /* InfoPlist.strings */; };
+		626A832C1468C64C00915972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A832B1468C64C00915972 /* main.m */; };
+		626A83301468C64C00915972 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A832F1468C64C00915972 /* AppDelegate.m */; };
+		626A83331468C64C00915972 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83321468C64C00915972 /* RootViewController.m */; };
+		626A83361468C64C00915972 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83351468C64C00915972 /* DataViewController.m */; };
+		626A83391468C64C00915972 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83381468C64C00915972 /* ModelController.m */; };
+		626A833C1468C64C00915972 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626A833A1468C64C00915972 /* MainStoryboard.storyboard */; };
+		626A83451468C64C00915972 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A831F1468C64C00915972 /* UIKit.framework */; };
+		626A83461468C64C00915972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83211468C64C00915972 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		626A83471468C64C00915972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 626A83121468C64B00915972 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 626A831A1468C64B00915972;
+			remoteInfo = IBooKTurnPagesReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		623B39D2146A553F00418712 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = SOURCE_ROOT; };
+		623B39E6146A65CB00418712 /* PdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfView.h; sourceTree = "<group>"; };
+		623B39E7146A65CB00418712 /* PdfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfView.m; sourceTree = "<group>"; };
+		626A831B1468C64B00915972 /* IBooKTurnPagesReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBooKTurnPagesReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		626A831F1468C64C00915972 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		626A83211468C64C00915972 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		626A83231468C64C00915972 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		626A83271468C64C00915972 /* IBooKTurnPagesReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBooKTurnPagesReader-Info.plist"; sourceTree = "<group>"; };
+		626A83291468C64C00915972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		626A832B1468C64C00915972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		626A832D1468C64C00915972 /* IBooKTurnPagesReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBooKTurnPagesReader-Prefix.pch"; sourceTree = "<group>"; };
+		626A832E1468C64C00915972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		626A832F1468C64C00915972 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		626A83311468C64C00915972 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		626A83321468C64C00915972 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		626A83341468C64C00915972 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		626A83351468C64C00915972 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		626A83371468C64C00915972 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		626A83381468C64C00915972 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		626A833B1468C64C00915972 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		626A83421468C64C00915972 /* IBooKTurnPagesReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBooKTurnPagesReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		626A83181468C64B00915972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A83201468C64C00915972 /* UIKit.framework in Frameworks */,
+				626A83221468C64C00915972 /* Foundation.framework in Frameworks */,
+				626A83241468C64C00915972 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626A833E1468C64C00915972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A83451468C64C00915972 /* UIKit.framework in Frameworks */,
+				626A83461468C64C00915972 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		626A83101468C64B00915972 = {
+			isa = PBXGroup;
+			children = (
+				626A83251468C64C00915972 /* IBooKTurnPagesReader */,
+				626A831E1468C64B00915972 /* Frameworks */,
+				626A831C1468C64B00915972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		626A831C1468C64B00915972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				626A831B1468C64B00915972 /* IBooKTurnPagesReader.app */,
+				626A83421468C64C00915972 /* IBooKTurnPagesReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		626A831E1468C64B00915972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				626A831F1468C64C00915972 /* UIKit.framework */,
+				626A83211468C64C00915972 /* Foundation.framework */,
+				626A83231468C64C00915972 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		626A83251468C64C00915972 /* IBooKTurnPagesReader */ = {
+			isa = PBXGroup;
+			children = (
+				626A832E1468C64C00915972 /* AppDelegate.h */,
+				626A832F1468C64C00915972 /* AppDelegate.m */,
+				626A83311468C64C00915972 /* RootViewController.h */,
+				626A83321468C64C00915972 /* RootViewController.m */,
+				626A83341468C64C00915972 /* DataViewController.h */,
+				626A83351468C64C00915972 /* DataViewController.m */,
+				626A83371468C64C00915972 /* ModelController.h */,
+				626A83381468C64C00915972 /* ModelController.m */,
+				626A833A1468C64C00915972 /* MainStoryboard.storyboard */,
+				623B39E6146A65CB00418712 /* PdfView.h */,
+				623B39E7146A65CB00418712 /* PdfView.m */,
+				626A83261468C64C00915972 /* Supporting Files */,
+			);
+			path = IBooKTurnPagesReader;
+			sourceTree = "<group>";
+		};
+		626A83261468C64C00915972 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				623B39D2146A553F00418712 /* test.pdf */,
+				626A83271468C64C00915972 /* IBooKTurnPagesReader-Info.plist */,
+				626A83281468C64C00915972 /* InfoPlist.strings */,
+				626A832B1468C64C00915972 /* main.m */,
+				626A832D1468C64C00915972 /* IBooKTurnPagesReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		626A831A1468C64B00915972 /* IBooKTurnPagesReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626A83541468C64C00915972 /* Build configuration list for PBXNativeTarget "IBooKTurnPagesReader" */;
+			buildPhases = (
+				626A83171468C64B00915972 /* Sources */,
+				626A83181468C64B00915972 /* Frameworks */,
+				626A83191468C64B00915972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBooKTurnPagesReader;
+			productName = IBooKTurnPagesReader;
+			productReference = 626A831B1468C64B00915972 /* IBooKTurnPagesReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		626A83411468C64C00915972 /* IBooKTurnPagesReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626A83571468C64C00915972 /* Build configuration list for PBXNativeTarget "IBooKTurnPagesReaderTests" */;
+			buildPhases = (
+				626A833D1468C64C00915972 /* Sources */,
+				626A833E1468C64C00915972 /* Frameworks */,
+				626A833F1468C64C00915972 /* Resources */,
+				626A83401468C64C00915972 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				626A83481468C64C00915972 /* PBXTargetDependency */,
+			);
+			name = IBooKTurnPagesReaderTests;
+			productName = IBooKTurnPagesReaderTests;
+			productReference = 626A83421468C64C00915972 /* IBooKTurnPagesReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		626A83121468C64B00915972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 626A83151468C64B00915972 /* Build configuration list for PBXProject "IBooKTurnPagesReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 626A83101468C64B00915972;
+			productRefGroup = 626A831C1468C64B00915972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				626A831A1468C64B00915972 /* IBooKTurnPagesReader */,
+				626A83411468C64C00915972 /* IBooKTurnPagesReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		626A83191468C64B00915972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A832A1468C64C00915972 /* InfoPlist.strings in Resources */,
+				626A833C1468C64C00915972 /* MainStoryboard.storyboard in Resources */,
+				623B39D3146A553F00418712 /* test.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626A833F1468C64C00915972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		626A83401468C64C00915972 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		626A83171468C64B00915972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626A832C1468C64C00915972 /* main.m in Sources */,
+				626A83301468C64C00915972 /* AppDelegate.m in Sources */,
+				626A83331468C64C00915972 /* RootViewController.m in Sources */,
+				626A83361468C64C00915972 /* DataViewController.m in Sources */,
+				626A83391468C64C00915972 /* ModelController.m in Sources */,
+				623B39E8146A65CB00418712 /* PdfView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626A833D1468C64C00915972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		626A83481468C64C00915972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 626A831A1468C64B00915972 /* IBooKTurnPagesReader */;
+			targetProxy = 626A83471468C64C00915972 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		626A83281468C64C00915972 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				626A83291468C64C00915972 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		626A833A1468C64C00915972 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				626A833B1468C64C00915972 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		626A83521468C64C00915972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		626A83531468C64C00915972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		626A83551468C64C00915972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBooKTurnPagesReader/IBooKTurnPagesReader-Prefix.pch";
+				INFOPLIST_FILE = "IBooKTurnPagesReader/IBooKTurnPagesReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		626A83561468C64C00915972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBooKTurnPagesReader/IBooKTurnPagesReader-Prefix.pch";
+				INFOPLIST_FILE = "IBooKTurnPagesReader/IBooKTurnPagesReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		626A83581468C64C00915972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IBooKTurnPagesReader.app/IBooKTurnPagesReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBooKTurnPagesReader/IBooKTurnPagesReader-Prefix.pch";
+				INFOPLIST_FILE = "IBooKTurnPagesReaderTests/IBooKTurnPagesReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		626A83591468C64C00915972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IBooKTurnPagesReader.app/IBooKTurnPagesReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBooKTurnPagesReader/IBooKTurnPagesReader-Prefix.pch";
+				INFOPLIST_FILE = "IBooKTurnPagesReaderTests/IBooKTurnPagesReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		626A83151468C64B00915972 /* Build configuration list for PBXProject "IBooKTurnPagesReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626A83521468C64C00915972 /* Debug */,
+				626A83531468C64C00915972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		626A83541468C64C00915972 /* Build configuration list for PBXNativeTarget "IBooKTurnPagesReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626A83551468C64C00915972 /* Debug */,
+				626A83561468C64C00915972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		626A83571468C64C00915972 /* Build configuration list for PBXNativeTarget "IBooKTurnPagesReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626A83581468C64C00915972 /* Debug */,
+				626A83591468C64C00915972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 626A83121468C64B00915972 /* Project object */;
+}
