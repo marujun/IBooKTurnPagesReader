@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PdfView : NSObject
+@interface PdfView : UIView { 
+    CGPDFDocumentRef pdf;
+    int pIndex;
+}
+
+@property int pIndex;
+-(void)drawInContext:(CGContextRef)context;
+-(void)initPDF:(NSInteger)pageIndex;
+-(NSInteger) getNumberOfPages;
 
 @end

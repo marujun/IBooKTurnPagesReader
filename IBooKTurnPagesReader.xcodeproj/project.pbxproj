@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623B39D3146A553F00418712 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 623B39D2146A553F00418712 /* test.pdf */; };
+		623B39E8146A65CB00418712 /* PdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 623B39E7146A65CB00418712 /* PdfView.m */; };
 		626A83201468C64C00915972 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A831F1468C64C00915972 /* UIKit.framework */; };
 		626A83221468C64C00915972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83211468C64C00915972 /* Foundation.framework */; };
 		626A83241468C64C00915972 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83231468C64C00915972 /* CoreGraphics.framework */; };
@@ -17,11 +19,8 @@
 		626A83361468C64C00915972 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83351468C64C00915972 /* DataViewController.m */; };
 		626A83391468C64C00915972 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83381468C64C00915972 /* ModelController.m */; };
 		626A833C1468C64C00915972 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626A833A1468C64C00915972 /* MainStoryboard.storyboard */; };
-		626A83441468C64C00915972 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83431468C64C00915972 /* SenTestingKit.framework */; };
 		626A83451468C64C00915972 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A831F1468C64C00915972 /* UIKit.framework */; };
 		626A83461468C64C00915972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626A83211468C64C00915972 /* Foundation.framework */; };
-		626A834E1468C64C00915972 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 626A834C1468C64C00915972 /* InfoPlist.strings */; };
-		626A83511468C64C00915972 /* IBooKTurnPagesReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 626A83501468C64C00915972 /* IBooKTurnPagesReaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,29 +34,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		623B39D2146A553F00418712 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = SOURCE_ROOT; };
+		623B39E6146A65CB00418712 /* PdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfView.h; sourceTree = "<group>"; };
+		623B39E7146A65CB00418712 /* PdfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfView.m; sourceTree = "<group>"; };
 		626A831B1468C64B00915972 /* IBooKTurnPagesReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBooKTurnPagesReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626A831F1468C64C00915972 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		626A83211468C64C00915972 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		626A83231468C64C00915972 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		626A83271468C64C00915972 /* IBooKTurnPagesReader-Info.plist */ = {isa = PBXFileReference; path = "IBooKTurnPagesReader-Info.plist"; sourceTree = "<group>"; };
+		626A83271468C64C00915972 /* IBooKTurnPagesReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBooKTurnPagesReader-Info.plist"; sourceTree = "<group>"; };
 		626A83291468C64C00915972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		626A832B1468C64C00915972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		626A832D1468C64C00915972 /* IBooKTurnPagesReader-Prefix.pch */ = {isa = PBXFileReference; path = "IBooKTurnPagesReader-Prefix.pch"; sourceTree = "<group>"; };
-		626A832E1468C64C00915972 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		626A832D1468C64C00915972 /* IBooKTurnPagesReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBooKTurnPagesReader-Prefix.pch"; sourceTree = "<group>"; };
+		626A832E1468C64C00915972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		626A832F1468C64C00915972 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		626A83311468C64C00915972 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		626A83311468C64C00915972 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		626A83321468C64C00915972 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		626A83341468C64C00915972 /* DataViewController.h */ = {isa = PBXFileReference; path = DataViewController.h; sourceTree = "<group>"; };
+		626A83341468C64C00915972 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		626A83351468C64C00915972 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		626A83371468C64C00915972 /* ModelController.h */ = {isa = PBXFileReference; path = ModelController.h; sourceTree = "<group>"; };
+		626A83371468C64C00915972 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		626A83381468C64C00915972 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		626A833B1468C64C00915972 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		626A83421468C64C00915972 /* IBooKTurnPagesReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBooKTurnPagesReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		626A83431468C64C00915972 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		626A834B1468C64C00915972 /* IBooKTurnPagesReaderTests-Info.plist */ = {isa = PBXFileReference; path = "IBooKTurnPagesReaderTests-Info.plist"; sourceTree = "<group>"; };
-		626A834D1468C64C00915972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		626A834F1468C64C00915972 /* IBooKTurnPagesReaderTests.h */ = {isa = PBXFileReference; path = IBooKTurnPagesReaderTests.h; sourceTree = "<group>"; };
-		626A83501468C64C00915972 /* IBooKTurnPagesReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBooKTurnPagesReaderTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626A83441468C64C00915972 /* SenTestingKit.framework in Frameworks */,
 				626A83451468C64C00915972 /* UIKit.framework in Frameworks */,
 				626A83461468C64C00915972 /* Foundation.framework in Frameworks */,
 			);
@@ -88,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				626A83251468C64C00915972 /* IBooKTurnPagesReader */,
-				626A83491468C64C00915972 /* IBooKTurnPagesReaderTests */,
 				626A831E1468C64B00915972 /* Frameworks */,
 				626A831C1468C64B00915972 /* Products */,
 			);
@@ -109,7 +104,6 @@
 				626A831F1468C64C00915972 /* UIKit.framework */,
 				626A83211468C64C00915972 /* Foundation.framework */,
 				626A83231468C64C00915972 /* CoreGraphics.framework */,
-				626A83431468C64C00915972 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +120,8 @@
 				626A83371468C64C00915972 /* ModelController.h */,
 				626A83381468C64C00915972 /* ModelController.m */,
 				626A833A1468C64C00915972 /* MainStoryboard.storyboard */,
+				623B39E6146A65CB00418712 /* PdfView.h */,
+				623B39E7146A65CB00418712 /* PdfView.m */,
 				626A83261468C64C00915972 /* Supporting Files */,
 			);
 			path = IBooKTurnPagesReader;
@@ -134,29 +130,11 @@
 		626A83261468C64C00915972 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				623B39D2146A553F00418712 /* test.pdf */,
 				626A83271468C64C00915972 /* IBooKTurnPagesReader-Info.plist */,
 				626A83281468C64C00915972 /* InfoPlist.strings */,
 				626A832B1468C64C00915972 /* main.m */,
 				626A832D1468C64C00915972 /* IBooKTurnPagesReader-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		626A83491468C64C00915972 /* IBooKTurnPagesReaderTests */ = {
-			isa = PBXGroup;
-			children = (
-				626A834F1468C64C00915972 /* IBooKTurnPagesReaderTests.h */,
-				626A83501468C64C00915972 /* IBooKTurnPagesReaderTests.m */,
-				626A834A1468C64C00915972 /* Supporting Files */,
-			);
-			path = IBooKTurnPagesReaderTests;
-			sourceTree = "<group>";
-		};
-		626A834A1468C64C00915972 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				626A834B1468C64C00915972 /* IBooKTurnPagesReaderTests-Info.plist */,
-				626A834C1468C64C00915972 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,6 +211,7 @@
 			files = (
 				626A832A1468C64C00915972 /* InfoPlist.strings in Resources */,
 				626A833C1468C64C00915972 /* MainStoryboard.storyboard in Resources */,
+				623B39D3146A553F00418712 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626A834E1468C64C00915972 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +250,7 @@
 				626A83331468C64C00915972 /* RootViewController.m in Sources */,
 				626A83361468C64C00915972 /* DataViewController.m in Sources */,
 				626A83391468C64C00915972 /* ModelController.m in Sources */,
+				623B39E8146A65CB00418712 /* PdfView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626A83511468C64C00915972 /* IBooKTurnPagesReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +286,6 @@
 				626A833B1468C64C00915972 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		626A834C1468C64C00915972 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				626A834D1468C64C00915972 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -443,6 +413,7 @@
 				626A83561468C64C00915972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		626A83571468C64C00915972 /* Build configuration list for PBXNativeTarget "IBooKTurnPagesReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +422,7 @@
 				626A83591468C64C00915972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

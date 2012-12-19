@@ -20,20 +20,31 @@
  */
 
 @interface ModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, strong, nonatomic) NSMutableArray *pageData;
 @end
 
 @implementation ModelController
 
 @synthesize pageData = _pageData;
+extern int iOrientation;
 
 - (id)init
 {
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+        //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        CFURLRef pdfURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), CFSTR("test.pdf"), NULL, NULL); 
+        pdf = CGPDFDocumentCreateWithURL((CFURLRef)pdfURL);
+        CFRelease(pdfURL);
+        
+        _pageData = [[NSMutableArray alloc] init];
+        NSInteger numberOfPages = CGPDFDocumentGetNumberOfPages(pdf);
+        for (NSInteger i = 0; i < numberOfPages; i++ ) {
+            [_pageData addObject:[[NSString alloc] initWithFormat:@"%d", i]];
+        }
+        //_pageData = [[dateFormatter monthSymbols] copy];
+        //_pageData = pageData1;
     }
     return self;
 }
@@ -48,6 +59,8 @@
     // Create a new view controller and pass suitable data.
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
     dataViewController.dataObject = [self.pageData objectAtIndex:index];
+    dataViewController.pageIndex = index + 1;
+    //NSLog(@"dataObject=%@,pageIndex=%d", [dataViewController.dataObject description], dataViewController.pageIndex);
     return dataViewController;
 }
 
@@ -82,7 +95,14 @@
     
     index++;
     if (index == [self.pageData count]) {
-        return nil;
+        if (iOrientation == 1) {
+            DataViewController *dataViewController = [viewController.storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+            dataViewController.dataLabel.text = @"!";
+            return dataViewController;
+        } else  {
+            return nil;
+        }
+        
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }

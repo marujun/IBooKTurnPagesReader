@@ -12,6 +12,10 @@
 
 @synthesize dataLabel = _dataLabel;
 @synthesize dataObject = _dataObject;
+@synthesize pageIndex = _pageIndex;
+@synthesize pdfView = _pdfView;
+
+extern int iOrientation;
 
 - (void)didReceiveMemoryWarning
 {
@@ -25,6 +29,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // webview load pdf
+    //[self loadDocument:@"test" inView:self.pdfView];
+     NSLog(@"===========%d", self.pageIndex);
+    //竖屏
+    CGRect frame;
+    //横屏
+    if (iOrientation == 0) {
+        frame = CGRectMake(20, 49, 650, 850);
+    } else {
+        frame = CGRectMake(30, 49, 400, 600);
+    }
+    _pdfView = [[PdfView alloc] initWithFrame:frame];
+    [_pdfView initPDF:self.pageIndex];
+    _pdfView.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:_pdfView];
+
+//    [_pdfView release];
+    
 }
 
 - (void)viewDidUnload
@@ -37,7 +60,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
+    self.dataLabel.text = [[NSString alloc] initWithFormat:@"%d/%d", self.pageIndex, [_pdfView getNumberOfPages]];
 }
 
 - (void)viewDidAppear:(BOOL)animated

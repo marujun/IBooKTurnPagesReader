@@ -10,7 +10,9 @@
 
 @class DataViewController;
 
-@interface ModelController : NSObject <UIPageViewControllerDataSource>
+@interface ModelController : NSObject <UIPageViewControllerDataSource> {
+    CGPDFDocumentRef pdf;
+}
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController;
 @end

@@ -21,6 +21,8 @@
 @synthesize pageViewController = _pageViewController;
 @synthesize modelController = _modelController;
 
+int iOrientation = 0; //0竖屏，1横屏
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -115,7 +117,16 @@
 {
     if (UIInterfaceOrientationIsPortrait(orientation)) {
         // In portrait orientation: Set the spine position to "min" and the page view controller's view controllers array to contain just one view controller. Setting the spine position to 'UIPageViewControllerSpineLocationMid' in landscape orientation sets the doubleSided property to YES, so set it to NO here.
+        //竖屏
+        iOrientation = 0;
         UIViewController *currentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+        
+        NSArray *views = currentViewController.view.subviews;
+        for (UIView *view in views) {
+            [view removeFromSuperview];
+        }
+        [currentViewController viewDidLoad];
+        
         NSArray *viewControllers = [NSArray arrayWithObject:currentViewController];
         [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:NULL];
         
@@ -124,7 +135,16 @@
     }
 
     // In landscape orientation: Set set the spine location to "mid" and the page view controller's view controllers array to contain two view controllers. If the current page is even, set it to contain the current and next view controllers; if it is odd, set the array to contain the previous and current view controllers.
+    //横屏
+    iOrientation = 1;
     DataViewController *currentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    NSArray *views = currentViewController.view.subviews;
+    for (UIView *view in views) {
+        [view removeFromSuperview];
+    }
+
+    [currentViewController viewDidLoad];
+  
     NSArray *viewControllers = nil;
 
     NSUInteger indexOfCurrentViewController = [self.modelController indexOfViewController:currentViewController];
